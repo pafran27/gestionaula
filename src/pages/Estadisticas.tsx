@@ -271,7 +271,7 @@ export default function Estadisticas() {
       {/* Por género */}
       <div>
         <p className="text-[11px] font-semibold text-slate-500 uppercase tracking-wide mb-3">Por género</p>
-        <div className="flex gap-4 flex-wrap">
+        <div className="flex flex-col sm:flex-row gap-4">
           <PanelGenero titulo="Varones" colorClass="text-blue-700" barraClass="bg-blue-500" resumen={resumenVarones} />
           <PanelGenero titulo="Mujeres" colorClass="text-pink-700" barraClass="bg-pink-400" resumen={resumenMujeres} />
           {statsOtros.length > 0 && (
